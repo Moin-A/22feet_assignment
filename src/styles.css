@@ -1,0 +1,55 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.bg-dark {
+  background-color: #854f15 !important;
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+
+li {
+  list-style: none;
+  margin:0.5rem;
+  margin: auto 0.4rem;
+}
+
+li:nth-child(2) {
+margin-left: auto;
+}
+
+.svg {
+  height: 50px;
+}
+
+nav {
+  padding: 0.2rem;
+}
+
+img {
+  max-height: 90vh;
+  object-fit: cover;
+}
+
+a,a:hover {
+  text-decoration: none!important;
+  color: inherit;
+  font-weight: bold;
+}
+
+
+.grid-col {
+  max-height: 3rem;
+  max-width: 3rem;
+}
+
+.bg-img {
+  background-image: "4-unsplash.jpg";
+}

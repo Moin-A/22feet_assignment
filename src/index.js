@@ -1,17 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter, Route } from "react-router-dom";
+import App from "./App";
+import Home from "./Home";
+import Header from "./Header";
+import Store from "./Store/Store";
+import "../src/Fonts/Piedra-Regular.ttf";
 
+const rootElement = document.getElementById("root");
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Route path="/" component={Header} />
+      <Route exact path="/" component={App} />
+      <Route exact path="/Home" component={Home} />
+      <Route exact path="/Store" component={Store} />
+    </BrowserRouter>
   </React.StrictMode>,
-  document.getElementById('root')
+  rootElement
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
