@@ -24,14 +24,8 @@ export default function Store() {
           </p>
         </div>
         <div className="items-list col">
-          {/* <img
-            src="1-unsplash.jpg"
-            className="img-fluid"
-            alt="Responsive image"
-          ></img> */}
-          {/* alt="Responsive image" */}
           {Object.values(data_config).map((item, index) => (
-            <div key={index}>
+            <div className="image-div" key={index}>
               <img src={item.URL} className="img-fluid" alt={item.name}></img>
               <p className="text">{item.name}</p>
             </div>
